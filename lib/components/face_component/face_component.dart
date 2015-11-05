@@ -8,6 +8,8 @@ import 'package:itcd/Face.dart';
     templateUrl: 'face-component.html',
     directives: const [NgStyle],
     inputs: const ['name', 'color'])
+
 class FaceComponent {
-  Face face;
+  String name;
+  String color;
 }
