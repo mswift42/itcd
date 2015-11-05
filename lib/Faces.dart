@@ -1,4 +1,4 @@
-library itcd.lib.Face;
+library itcd.lib.Faces;
 
 class Faces {
   String mainfg = "#303030";
