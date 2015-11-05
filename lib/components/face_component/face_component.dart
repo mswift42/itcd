@@ -6,7 +6,8 @@ import 'package:itcd/Face.dart';
 @Component(
     selector: 'theme-face',
     templateUrl: 'face-component.html',
-    directives: const [NgStyle])
+    directives: const [NgStyle],
+    inputs: const ['name', 'color'])
 class FaceComponent {
   Face face;
 }
