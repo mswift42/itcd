@@ -1,6 +1,6 @@
-library itcd.lib.Faces;
+library itcd.lib.Theme;
 
-class Faces {
+class Theme {
   String mainfg = "#303030";
   String mainbg = "#ffffff";
   String builtin = "#000000";
@@ -14,5 +14,5 @@ class Faces {
   String warning = "#ff0000";
   String warning2 = "#ff8800";
 
-  Faces();
+  Theme();
 }
