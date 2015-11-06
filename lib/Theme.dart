@@ -4,8 +4,8 @@ class Theme {
   List<String> _facenames = [
     "mainbg",
     "mainfg",
-    "builtin",
     "keyword",
+    "builtin",
     "string",
     "functionname",
     "variable",
@@ -24,6 +24,8 @@ class Theme {
       this.facemap = faces;
     }
   }
+  // changeColor sets one name in [facemap]
+  // to a new color.
   void changeColor(String name, String color) {
     facemap[name] = color;
   }
