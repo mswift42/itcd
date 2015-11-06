@@ -1,18 +1,28 @@
 library itcd.lib.Theme;
 
 class Theme {
-  String mainfg = "#303030";
-  String mainbg = "#ffffff";
-  String builtin = "#000000";
-  String keyword = "#000000";
-  String string = "#000000";
-  String functionname = "#000000";
-  String variable = "#000000";
-  String type = "#000000";
-  String constant = "#000000";
-  String comment = "#606060";
-  String warning = "#ff0000";
-  String warning2 = "#ff8800";
+  List<String> _facenames = [
+    "mainbg",
+    "mainfg",
+    "builtin",
+    "keyword",
+    "string",
+    "functionname",
+    "variable",
+    "type",
+    "constant",
+    "comment",
+    "warning",
+    "warning2"
+  ];
+  Map<String,String> facemap;
 
-  Theme();
+  Theme(List<String> colors) {
+    var faces = new Map();
+    for (int i = 0;i< colors.length;i++) {
+      faces[this._facenames[i]] = colors[i];
+      this.facemap = faces;
+    }
+  }
+//  static Map<String,String> get faces => facemap;
 }
