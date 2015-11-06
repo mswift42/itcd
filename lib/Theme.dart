@@ -24,5 +24,7 @@ class Theme {
       this.facemap = faces;
     }
   }
-//  static Map<String,String> get faces => facemap;
+  void changeColor(String name, String color) {
+    facemap[name] = color;
+  }
 }
