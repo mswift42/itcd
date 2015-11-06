@@ -26,5 +26,10 @@ void main() {
     expect(t1.facemap["warning"], "#ff1276");
     expect(t1.facemap["type"], "#8c4a79");
     expect(t1.facemap["mainfg"], "#585858");
+    expect(t1.facemap["constant"], "#697024");
+    expect(t1.facemap["comment"], "#a9a9a9");
+    expect(t1.facemap["variable"], "#476238");
+    expect(t1.facemap["string"], "#b3534b");
+    expect(t1.facemap["keyword"], "#4a858c");
   });
 }
