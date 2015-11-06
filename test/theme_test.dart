@@ -32,4 +32,23 @@ void main() {
     expect(t1.facemap["string"], "#b3534b");
     expect(t1.facemap["keyword"], "#4a858c");
   });
+  test('changeColor sets a facemap name to a new color', () {
+    var t1 = new Theme([
+    "#f5ebe1", // mainbg
+    "#585858", // mainfg
+    "#4a858c", // keyword
+    "#1a8591", // builtin
+    "#b3534b", // string
+    "#bd745e", // functionname
+    "#476238", // variable
+    "#8c4a79", // type
+    "#697024", // constant
+    "#a9a9a9", // comment
+    "#ff1276", // warning
+    "#ff4d12"  // warning2
+    ]);
+    expect(t1.facemap["keyword"], "#4a858c");
+    t1.changeColor("keyword", "#112233");
+    expect(t1.facemap["keyword"], "#112233");
+  });
 }
