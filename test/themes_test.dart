@@ -1,6 +1,6 @@
-library themeservice_test;
+library themes_test;
 
-import 'package:itcd/Themeservice.dart';
+import 'package:itcd/Themes.dart';
 import 'package:test/test.dart';
 
 void main() {

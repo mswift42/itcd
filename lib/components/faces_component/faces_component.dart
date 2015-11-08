@@ -3,7 +3,7 @@ library itcd.lib.components.faces_component.faces_component;
 import 'package:angular2/angular2.dart';
 import 'package:itcd/components/face_component/face_component.dart';
 import 'package:itcd/Face.dart';
-import 'package:itcd/Themeservice.dart';
+import 'package:itcd/Themes.dart';
 
 @Component(
     selector: 'theme-faces',
