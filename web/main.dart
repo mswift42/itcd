@@ -1,6 +1,7 @@
 import 'package:angular2/angular2.dart';
 import 'package:angular2/bootstrap.dart';
 import 'package:itcd/components/faces_component/faces_component.dart';
+import 'package:itcd/Themeservice.dart';
 
 @Component(
     selector: 'my-app',
@@ -9,5 +10,5 @@ import 'package:itcd/components/faces_component/faces_component.dart';
 class AppComponent {}
 
 main() {
-  bootstrap(AppComponent);
+  bootstrap(AppComponent, [ThemeService]);
 }
