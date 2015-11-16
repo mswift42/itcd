@@ -1,5 +1,6 @@
 <div class="cpick">
-    <div *ng-for="#face of faces">
-        <theme-face name="{{face.name}}" color="{{face.color}}"></theme-face>
+    <div *ng-for="#face of facenames">
+        <theme-face name="{{face}}"
+                    color="{{theme[face]}}"></theme-face>
     </div>
 </div>
